@@ -32,6 +32,7 @@ export class FuncionarioFormComponent implements OnInit{
     this.funcionarioForm = new FormGroup ({
       id: new FormControl(this.dadosFuncionario ? this.dadosFuncionario.id : 0),
       nome: new FormControl(this.dadosFuncionario ? this.dadosFuncionario.nome : '', [Validators.required]),
+      cpf: new FormControl(this.dadosFuncionario ? this.dadosFuncionario.CPF : '', [Validators.required]),
       departamento: new FormControl(this.dadosFuncionario ? this.dadosFuncionario.departamento : '',[Validators.required]),
       turno: new FormControl(this.dadosFuncionario ? this.dadosFuncionario.turno : '',[Validators.required]),
       ativo:  new FormControl(this.dadosFuncionario ? this.dadosFuncionario?.ativo : true),

@@ -1,0 +1,46 @@
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    background:rgba(0, 0, 0, 0.8); 
+    background-image: url('/assets/images/ilustraçãologin.png');
+    background-size: contain; /* Faz com que a imagem cubra todo o container */
+   background-position: center; /* Centraliza a imagem */
+   background-repeat: no-repeat;
+   color: white;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(34, 32, 32, 0.8); /* Cor de fundo branca com transparência */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-card mat-card-title {
+    text-align: center;
+  }
+  
+  form {
+    width: 100%;
+    text-align: center;
+  }
+  
+  button[type="submit"] {
+    margin-top: 20px;
+}
+  

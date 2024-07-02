@@ -8,12 +8,13 @@ import { LoginComponent } from './pages/Login/login/login.component';
 import { TarefasComponent } from './pages/tarefas/tarefas.component';
 import { PontoComponent } from './pages/Ponto/ponto/ponto.component';
 
+
 const routes: Routes = [
   {path:'detalhes/:id', component: DetalhesComponent },
   {path: '', component: HomeComponent},
   {path: 'cadastro', component: CadastroComponent},
-  {path: 'editar/:id', component: EditarComponent},
-  {path: 'login', component: LoginComponent},
+  {path: 'editar/:id', component: EditarComponent },
+  {path: 'login', component: LoginComponent, data: { hideNavbar: true } },
   {path: 'tarefas', component: TarefasComponent},
   {path: 'ponto', component: PontoComponent},
 ];

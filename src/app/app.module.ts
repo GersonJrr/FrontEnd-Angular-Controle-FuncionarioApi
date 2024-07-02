@@ -8,7 +8,7 @@ import { ReactiveFormsModule} from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './pages/ListaFuncionarios/home.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { DetalhesComponent } from './pages/detalhes/detalhes.component';
 import { EditarComponent } from './pages/editar/editar.component';
@@ -26,6 +26,9 @@ import { ExcluirComponent } from './components/excluir/excluir.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { TarefasComponent } from './pages/tarefas/tarefas.component';
+import { LoginComponent } from './pages/Login/login/login.component';
+import { PontoComponent } from './pages/Ponto/ponto/ponto.component';
 
 
 
@@ -42,6 +45,9 @@ import {MatIconModule} from '@angular/material/icon';
     FuncionarioFormComponent,
     ExcluirComponent,
     NavbarComponent,
+    TarefasComponent,
+    LoginComponent,
+    PontoComponent,
 
 
   ],

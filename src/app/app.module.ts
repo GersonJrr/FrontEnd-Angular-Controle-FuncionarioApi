@@ -8,7 +8,7 @@ import { ReactiveFormsModule} from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/ListaFuncionarios/home.component';
+import { HomeComponent } from './pages/Home/home.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { DetalhesComponent } from './pages/detalhes/detalhes.component';
 import { EditarComponent } from './pages/editar/editar.component';

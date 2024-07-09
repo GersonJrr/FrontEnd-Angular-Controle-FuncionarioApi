@@ -7,10 +7,12 @@ import { EditarComponent } from './pages/editar/editar.component';
 import { LoginComponent } from './pages/Login/login/login.component';
 import { TarefasComponent } from './pages/tarefas/tarefas.component';
 import { PontoComponent } from './pages/Ponto/ponto/ponto.component';
+import { PageInicialComponent } from './pages/page-inicial/page-inicial.component';
 
 
 const routes: Routes = [
   {path:'detalhes/:id', component: DetalhesComponent },
+  {path: 'inicio', component: PageInicialComponent},
   {path: '', component: HomeComponent},
   {path: 'cadastro', component: CadastroComponent},
   {path: 'editar/:id', component: EditarComponent },

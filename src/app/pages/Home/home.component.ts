@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FuncionarioService } from 'src/app/services/funcionario-service.service';
+import { FuncionarioService } from 'src/app/services/funcionarioService/funcionario-service.service';
 import { Funcionario } from '../../models/Funcionarios';
 import { ExcluirComponent } from '../../components/excluir/excluir.component'
 import { MatDialog } from '@angular/material/dialog';
@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit{
 
   funcionarios: Funcionario[] = [];
   funcionariosGeral: Funcionario[] = [];
-  columnsToDisplay = ['Situacao', 'Nome', 'Departamento', 'Ações', 'Teste'];
+  columnsToDisplay = ['Situacao', 'Nome', 'Departamento', 'CPF', 'Ações', 'Teste'];
 
 
   constructor(private funcionarioService : FuncionarioService, public matDialog: MatDialog) { }

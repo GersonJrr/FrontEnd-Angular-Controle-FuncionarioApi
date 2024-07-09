@@ -2,7 +2,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { Funcionario } from 'src/app/models/Funcionarios';
-import { FuncionarioService } from 'src/app/services/funcionario-service.service';
+import { FuncionarioService } from 'src/app/services/funcionarioService/funcionario-service.service';
 
 @Component({
   selector: 'app-excluir',

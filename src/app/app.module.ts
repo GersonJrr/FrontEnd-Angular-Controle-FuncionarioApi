@@ -29,6 +29,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { TarefasComponent } from './pages/tarefas/tarefas.component';
 import { LoginComponent } from './pages/Login/login/login.component';
 import { PontoComponent } from './pages/Ponto/ponto/ponto.component';
+import { CommonModule } from '@angular/common';
+import { PageInicialComponent } from './pages/page-inicial/page-inicial.component';
 
 
 
@@ -48,6 +50,7 @@ import { PontoComponent } from './pages/Ponto/ponto/ponto.component';
     TarefasComponent,
     LoginComponent,
     PontoComponent,
+    PageInicialComponent,
 
 
   ],
@@ -67,6 +70,7 @@ import { PontoComponent } from './pages/Ponto/ponto/ponto.component';
     MatDialogModule,
     MatToolbarModule,
     MatIconModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

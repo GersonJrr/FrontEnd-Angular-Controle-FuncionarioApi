@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Funcionario } from 'src/app/models/Funcionarios';
-import { FuncionarioService } from 'src/app/services/funcionario-service.service';
+import { FuncionarioService } from 'src/app/services/funcionarioService/funcionario-service.service';
 
 @Component({
   selector: 'app-funcionario-form',

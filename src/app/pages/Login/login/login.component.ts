@@ -31,13 +31,17 @@ export class LoginComponent implements OnInit {
   loginUser(): void {
     this.loginService.login(this.dadosForm['email'].value, this.dadosForm['senha'].value).subscribe(
       response => {
-        const token = response.token; // Ajuste conforme o nome do campo retornado pela API
-        this.loginService.setToken(token);
-        alert('login realizado');
-        this.router.navigate(['/inicio']);
+        if (response.dados) {
+          const token = response.dados.token; 
+          this.loginService.setToken(token);
+          alert('Login realizado com sucesso');
+          this.router.navigate(['/inicio']);
+        } else {
+          alert('Senha incorreta. Tente novamente.');
+        }
       },
       err => {
-        alert('Ocorreu um erro');
+        alert('Ocorreu um erro ao fazer login');
       }
     );
   }

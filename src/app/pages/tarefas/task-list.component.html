@@ -1,0 +1,28 @@
+<div class="task-list">
+  <h2>Tarefas</h2>
+  <form [formGroup]="taskForm" (ngSubmit)="addTask()">
+    <mat-form-field>
+      <mat-label>Nome da tarefa</mat-label>
+      <input matInput formControlName="name" placeholder="Nome da tarefa">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Descrição da tarefa</mat-label>
+      <input matInput formControlName="description" placeholder="Descrição da tarefa">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Data e Hora da Tarefa</mat-label>
+      <input matInput type="datetime-local" formControlName="deadline" placeholder="Data e Hora da Tarefa">
+    </mat-form-field>
+    <button mat-raised-button type="submit">Adicionar Tarefa</button>
+  </form>
+  <ul>
+    <li *ngFor="let task of tasks">
+      <span [class.completed]="task.isCompleted">{{ task.name }} - {{ task.description }}</span>
+      <p>Prazo: {{ task.deadline | date:'medium' }}</p> 
+      <mat-checkbox (change)="markAsCompleted(task)" [checked]="task.isCompleted">Concluída</mat-checkbox>
+      <button mat-icon-button (click)="deleteTask(task)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,37 @@
+/* src/app/components/task-list/task-list.component.css */
+.task-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+  
+.task-list form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.task-list form input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+  
+.task-list form button {
+    padding: 5px;
+}
+  
+.task-list ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+  
+.task-list li .completed {
+    text-decoration: line-through;
+}
+  

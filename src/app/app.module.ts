@@ -26,11 +26,14 @@ import { ExcluirComponent } from './components/excluir/excluir.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
-import { TarefasComponent } from './pages/tarefas/tarefas.component';
+import { TaskListComponent } from './pages/tarefas/task-list.component';
 import { LoginComponent } from './pages/Login/login/login.component';
 import { PontoComponent } from './pages/Ponto/ponto/ponto.component';
 import { CommonModule } from '@angular/common';
 import { PageInicialComponent } from './pages/page-inicial/page-inicial.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
+
 
 
 
@@ -47,7 +50,7 @@ import { PageInicialComponent } from './pages/page-inicial/page-inicial.componen
     FuncionarioFormComponent,
     ExcluirComponent,
     NavbarComponent,
-    TarefasComponent,
+    TaskListComponent,
     LoginComponent,
     PontoComponent,
     PageInicialComponent,
@@ -71,6 +74,7 @@ import { PageInicialComponent } from './pages/page-inicial/page-inicial.componen
     MatToolbarModule,
     MatIconModule,
     CommonModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
